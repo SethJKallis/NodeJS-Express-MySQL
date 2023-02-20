@@ -3,6 +3,9 @@ module.exports = app => {
 
     let router = require("express").Router();
 
+    //MIDDLEWARE
+    const message = require('../middleware/message')
+
     //Create a new tutorial
     router.post('/', tutorials.create);
 
